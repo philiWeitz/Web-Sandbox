@@ -21,6 +21,7 @@
 	<modules>
 		<module>WebDevSpringMVC</module>
     <module>WebDevSpringRESTfull</module>
+    <module>WebDevJavaEEServlet</module>
   </modules>
 
 	<build>
