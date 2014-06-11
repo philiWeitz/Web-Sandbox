@@ -9,13 +9,13 @@ import java.util.List;
 import org.junit.Test;
 
 import example.jpa.model.Greeting;
-import example.jpa.serviceDAOImpl.GreetingDAOServiceImpl;
+import example.jpa.service.impl.GreetingDAOServiceImpl;
 
 
 public class GreetingTest {
 
 	@Test
-	public void test() {		
+	public void testDatabaseConnection() {		
 		
 		Greeting greeting = new Greeting();
 		greeting.setCaption("Greetings!");

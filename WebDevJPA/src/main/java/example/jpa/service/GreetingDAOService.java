@@ -1,4 +1,4 @@
-package example.jpa.serviceDAO;
+package example.jpa.service;
 
 import java.util.List;
 

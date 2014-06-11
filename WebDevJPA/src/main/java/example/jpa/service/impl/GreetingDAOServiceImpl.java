@@ -1,13 +1,16 @@
-package example.jpa.serviceDAOImpl;
+package example.jpa.service.impl;
 
 import java.util.List;
 
 import example.jpa.model.Greeting;
-import example.jpa.serviceDAO.GreetingDAOService;
+import example.jpa.service.GreetingDAOService;
 
 
-public class GreetingDAOServiceImpl extends AbstractDAOServiceImpl<Greeting> implements GreetingDAOService {
+public class GreetingDAOServiceImpl 
+	extends AbstractDAOServiceImpl<Greeting> 
+	implements GreetingDAOService {
 
+	
 	public Greeting getGreetingById(Long id) {
 		return getById(id);
 	}

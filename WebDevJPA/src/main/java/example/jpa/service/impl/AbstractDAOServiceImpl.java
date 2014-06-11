@@ -1,4 +1,4 @@
-package example.jpa.serviceDAOImpl;
+package example.jpa.service.impl;
 
 import java.lang.reflect.ParameterizedType;
 import java.util.Collections;
@@ -8,18 +8,16 @@ import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import example.jpa.model.AbstractEntity;
 
 
-public abstract class AbstractDAOServiceImpl<T extends AbstractEntity> {
-	
-	private static Logger LOG = 
-			Logger.getLogger(AbstractDAOServiceImpl.class);
-	
+public abstract class AbstractDAOServiceImpl<T extends AbstractEntity> {	
+	private static Logger LOG = LogManager.getLogger(AbstractDAOServiceImpl.class);	
 	private EntityManager em;
-
+	
 
 	public AbstractDAOServiceImpl() {
 		em = Persistence.createEntityManagerFactory("hello-world").createEntityManager();
@@ -90,7 +88,7 @@ public abstract class AbstractDAOServiceImpl<T extends AbstractEntity> {
 	}
 	
 	
-	public void delete(T item) {		
+	public void delete(T item) {	
 		try {
 			em.getTransaction().begin();	
 			
