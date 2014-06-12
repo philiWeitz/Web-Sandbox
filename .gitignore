@@ -1,6 +1,7 @@
 
 target/
 .settings/
+bower_components/
 
 .project
 .classpath
