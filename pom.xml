@@ -56,6 +56,20 @@
 				        <password>admin</password>
 				    </configuration>
 				 </plugin>
+				 
+				 <plugin>
+				    <groupId>com.kelveden</groupId>
+				    <artifactId>maven-karma-plugin</artifactId>
+				    <version>1.8</version>
+				    <executions>
+				        <execution>
+				        	<phase>test</phase>
+				            <goals>
+				                <goal>start</goal>
+				            </goals>
+				        </execution>
+				    </executions>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 
